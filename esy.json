@@ -1,0 +1,27 @@
+{
+  "resolutions": {
+    "@opam/tyxml": "github:ocsigen/tyxml:tyxml.opam#407f41b2cc17ee636b4c5046b2efc16a26f27d8f",
+    "@opam/tyxml-jsx": "github:ocsigen/tyxml:tyxml-jsx.opam#407f41b2cc17ee636b4c5046b2efc16a26f27d8f",
+    "@opam/tyxml-syntax": "github:ocsigen/tyxml:tyxml-syntax.opam#407f41b2cc17ee636b4c5046b2efc16a26f27d8f"
+
+  },
+  "dependencies": {
+    "@opam/dream": "1.0.0~alpha4",
+    "@opam/dune": "^2.0",
+    "@opam/reason": "^3.8.0",
+    "@opam/tyxml": "dev",
+    "@opam/tyxml-jsx": "*",
+    "@opam/ppx_deriving_yojson": "*",
+    "@opam/yojson": "*",
+    "ocaml": "4.12.x"
+  },
+  "devDependencies": {
+    "@opam/ocaml-lsp-server": "1.9.0",
+    "@opam/merlin": "*",
+    "@opam/odoc": "*"
+  },
+  "scripts": {
+    "start": "dune exec --root . ./cat.exe",
+    "build": "dune build --root . cat"
+  }
+}
